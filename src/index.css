@@ -1,13 +1,38 @@
 @import "tailwindcss";
-
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @theme {
-  --color-bg: #F9F9FF;
-  --color-text: #191C20;
-  --color-text-muted: #44474E;
-  --color-accent: #415F91;
+  --color-bg: #f9f9ff;
+  --color-text: #191c20;
+  --color-text-muted: #44474e;
+  --color-accent: #415f91;
+  --color-danger: #93000A;
   --color-border: #e3e6ea;
   --color-primary: #284777;
+
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --animate-move-rotate: moveRotate 3s linear infinite;
+
+  @keyframes moveRotate {
+    0% {
+      transform: translateX(0) rotate(0deg);
+    }
+    20% {
+      transform: translateX(120px) rotate(0deg);
+    }
+    30% {
+      transform: translateX(120px) rotate(180deg);
+    }
+    70% {
+      transform: translateX(-120px) rotate(180deg);
+    }
+    80% {
+      transform: translateX(-120px) rotate(360deg);
+    }
+    100% {
+      transform: translateX(0) rotate(360deg);
+    }
+  }
 }
 
 :root {
@@ -20,7 +45,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
-  @media (max-width: 1024px) { font-size: 16px; }
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,4 +59,7 @@
   }
 }
 
-body { margin: 0; background-color: var(--color-bg);}
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+}
