@@ -1,9 +1,10 @@
 const SCREENSHOTS = [
-  { src: "/screenshots/1.jpg", alt: 'screenshot-1' },
-  { src: "/screenshots/2.jpg", alt: 'screenshot-2' },
-  { src: "/screenshots/3.jpg", alt: 'screenshot-3' },
-  { src: "/screenshots/2.jpg", alt: 'screenshot-4' },
-  { src: "/screenshots/3.jpg", alt: 'screenshot-5' },
+  { src: "/screenshots/home-screen.jpg", alt: "Home screen" },
+  { src: "/screenshots/account-settings.jpg", alt: "Account settings" },
+  { src: "/screenshots/feed-view.jpg", alt: "Feed view" },
+  { src: "/screenshots/list-view.jpg", alt: "List view" },
+  { src: "/screenshots/editor.jpg", alt: "Editor" },
+  { src: "/screenshots/diary-settings.jpg", alt: "Diary settings" },
 ];
 function AppPreview() {
   return (
