@@ -2,7 +2,6 @@ import TimelineCard from "./TimelineCard";
 const TIMELINE_DATA = [
   {
     weekNumber: "1",
-    title: "Foundation & Local Storage",
     items: [
       "Set up Expo Router and Tailwind v4 environment",
       "Configured local SQLite database with Drizzle ORM",
@@ -11,29 +10,59 @@ const TIMELINE_DATA = [
   },
   {
     weekNumber: "2",
-    title: "Core Journaling Engine",
     items: [
-      "Built rich block editor for daily entries and reflections",
-      "Implemented local zero-knowledge data encryption layer",
-      "Created habit streak tracking and calendar navigation",
+      "Added ability to log in, sign up, and upload profile picture",
+      "Improved overall app UI",
+      "Added subtle UI animations",
     ],
   },
   {
     weekNumber: "3",
-    title: "Sync & Export Systems",
     items: [
-      "Added secure cross-device sync via private cloud storage",
-      "Implemented zero-lock-in export (Markdown & JSON)",
-      "Polished dark mode components and micro-interactions",
+      "Added entry media attachments",
+      "Added native haptic feedback",
+      "Added account deletion functionality",
+      "Added interactive calendar view",
     ],
   },
   {
     weekNumber: "4",
-    title: "Landing Page & Launch",
     items: [
-      "Built landing page with custom CSS hero animations",
-      "Integrated privacy statement blockquote and feature cards",
-      "Prepared open-source repo documentation and v1 release",
+      "Made the calendar collapsible and enhanced functionality",
+      "Migrated from plain SQLite to SQLCipher encrypted database",
+      "Improved app UI and interactions",
+    ],
+  },
+  {
+    weekNumber: "5",
+    items: [
+      "Added ability to invite and add collaborators to diaries",
+      "Added end-to-end encrypted cloud synchronization",
+      "Redesigned and improved the Entry screen",
+    ],
+  },
+  {
+    weekNumber: "6",
+    items: [
+      "Added attachment cloud sync support",
+      "Added chronological Feed view",
+      "Added mood tracking feature",
+    ],
+  },
+  {
+    weekNumber: "7",
+    items: [
+      "Added introductory onboarding screen",
+      "Redesigned the List view",
+      "Added biometric App Lock privacy feature",
+    ],
+  },
+  {
+    weekNumber: "8",
+    items: [
+      "Added journaling streak tracking engine",
+      "Added ability to remove collaborators from diaries",
+      "Refined daily streak calculation counter",
     ],
   },
 ];
@@ -49,8 +78,8 @@ function Timeline() {
         <div className="border-l-4 border-accent py-2"></div>
         <div className="flex flex-col gap-10">
           {TIMELINE_DATA.map((item) => (
-              <div key={item.weekNumber} className="flex items-center gap-10">
-                <div className="w-5 h-5 bg-accent rounded"></div>
+            <div key={item.weekNumber} className="flex items-center gap-10">
+              <div className="w-5 h-5 bg-accent rounded"></div>
               <TimelineCard
                 weekNumber={item.weekNumber}
                 title={item.title}

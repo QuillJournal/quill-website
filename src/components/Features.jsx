@@ -1,34 +1,34 @@
 import FeatureCard from "./FeatureCard";
 const FEATURES = [
   {
-    title: "End-to-End Encrypted",
+    title: "End-to-End Encryption",
     content:
-      "Your journal entries are encrypted locally on your device before ever touching cloud storage. Only you hold the keys.",
+      "Your shared diaries are encrypted using end-to-end encryption. So only you and your friends can read them",
   },
   {
     title: "Local-First Storage",
     content:
-      "Built with a local database architecture. Your thoughts remain accessible and fully functional even when you're completely offline.",
+      "Built with a local database, your thoughts remain yours and are only synced when you are online",
   },
   {
-    title: "Zero Analytics or Trackers",
+    title: "Multi-View Navigation",
     content:
-      "We don't log your activity, monitor your typing habits, or sell your behavior data to third-party ad networks. Period.",
+      "Explore three distinct views. List, Feed, and Timeline. Each has its own purpose",
   },
   {
     title: "Minimalist Editorial UI",
     content:
-      "A distraction-free, typography-driven writing space designed to help you focus purely on reflection and storytelling.",
+      "A distraction-free, minimal but still powerful editor. You can attach media to entries, select your mood, and the date",
   },
   {
-    title: "Cross-Device Sync",
+    title: "App Lock",
     content:
-      "Securely sync your personal journal across your phone and tablet using your own private storage provider without middlemen.",
+      "More privacy with app lock, so you can lock the app and no one can open it without having your fingerprint",
   },
   {
-    title: "Export Anytime",
+    title: "Beginner Friendly",
     content:
-      "Your data belongs to you. Export your entire journal into clean Markdown or JSON files whenever you want, with zero lock-in.",
+      "Featuring an introductory screen and onboarding tutorial, so beginners don't get scared and can still learn the app step by step",
   },
 ];
 function Features() {
