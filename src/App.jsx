@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Timeline from "./components/Timeline";
+import AppPreview from "./components/AppPreview";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <Features />
       <Timeline />
+      <AppPreview />
     </div>
   );
 }
