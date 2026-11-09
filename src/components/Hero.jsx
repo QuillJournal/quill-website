@@ -17,9 +17,14 @@ function Hero() {
           your <span className="text-danger font-extrabold">privacy</span>?
         </span>
       </h2>
-      <p className="text-center text-text text-2xl mt-10">
-        We built Quill because we believe your personal data belongs to you
-      </p>
+      <div className="mt-20 max-w-2xl mx-auto border-l-4 border-accent pl-6 py-2">
+        <blockquote className="text-text font-jakarta text-2xl font-medium leading-relaxed">
+          <p>
+            <span className="block">We built <span className="font-bold text-accent">Quill</span> because we believe</span>
+            <span className="block">your personal data belongs to you.</span>
+          </p>
+        </blockquote>
+      </div>
     </>
   );
 }
