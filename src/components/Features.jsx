@@ -34,7 +34,9 @@ const FEATURES = [
 function Features() {
   return (
     <div className="mt-20">
-      <h2 className="text-4xl font-semibold">What makes Quil different?</h2>
+      <h2 className="text-4xl font-semibold">
+        What makes <span className="text-accent">Quil</span> different?
+      </h2>
       <div className="flex flex-col sm:grid grid-cols-2 md:grid-cols-3 gap-5 mt-10">
         {FEATURES.map((f) => (
           <FeatureCard title={f.title} content={f.content} />
