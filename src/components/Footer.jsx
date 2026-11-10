@@ -6,9 +6,9 @@ function Footer() {
         <p className="leading-relaxed p-2">
           Distraction-free, private, and local-first.
         </p>
-        <button className="bg-accent m-5 text-white font-jakarta font-medium text-sm px-6 py-3 rounded-2xl hover:bg-[#344e78] transition-colors shadow-xs cursor-pointer w-fit p-2">
+        <a href="https://github.com/QuillJournal/quill/releases"><button className="bg-accent m-5 text-white font-jakarta font-medium text-sm px-6 py-3 rounded-2xl hover:bg-[#344e78] transition-colors shadow-xs cursor-pointer w-fit p-2">
           Download Quil
-        </button>
+        </button></a>
       </div>
       <div className="border-t border-t-border mt-5 p-5 flex flex-col items-center gap-3">
         <p>© {new Date().getFullYear()} Quill. All rights reserved.</p>
